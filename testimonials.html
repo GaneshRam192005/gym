@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <title>THE FIT CLUB</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/icons8-gym-64.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    
+<style>
+    .hovering {
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease-in-out; }
+
+.hovering::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.hovering:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+.hovering:hover {
+  color: #000; 
+}
+
+   
+</style>
+
+</head>
+<body class="bg-[#DCEBF0] pb-8 ">
+
+    <header id="top" class="fixed py-2 top-0 left-0 right-0 bg-[#1C96C3] text-white z-40">
+        <nav class="header-content flex justify-between items-center align-middle px-4 space-x-7">
+            <div id="logo">
+                <a href="index.html"><img class="w-36  lg:w-40" src="images/output-onlinepngtools (1).png" alt="Logo"></a>
+            </div>
+    
+            <!-- Unordered List - Navigation Menu -->
+            <ul id="nav-menu" class="un-content hidden md:flex md:justify-between space-x-7 text-white">
+                <li><a class="hovering sm:text-xl md:text-2xl font-semibold" href="index.html">HOME</a></li>
+                <li><a class="hovering sm:text-xl md:text-2xl font-semibold" href="index.html/#program">PRODUCT</a></li>
+                <li><a class="hovering sm:text-xl md:text-2xl font-semibold" href="shop.html">SHOP</a></li>
+                <li><a class="hovering sm:text-xl md:text-2xl font-semibold" href="#price">PLANS</a></li>
+                <li><a class="hovering sm:text-xl md:text-2xl font-semibold" href="testimonials.html">TESTIMONIALS</a></li>
+            </ul>
+            
+            
+    
+            <!-- Hamburger Menu SVG - Visible only on small screens -->
+             <div class="text-white"> <svg id="menu-icon" class="md:hidden w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg></div>
+           
+        </nav>
+    
+        <!-- Dropdown Menu (visible on click for small screens) -->
+        <ul id="dropdown-menu" class="hidden flex-col bg-white font-semibold text-[#018ABD] space-y-2 text-lg px-6 py-4 absolute w-full top-16 left-0 shadow-lg md:hidden">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="#price">PLANS</a></li>
+            <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        </ul>
+    </header>
+    <section class="flex justify-center align-middle">
+        <section class="pt-24 w-11/12 mx-auto ">
+            <div class="text-center md:flex md:justify-center md:align-top md:items-start">
+                <div class="text-[#018ABD] text-xl font-semibold">Write A Review:</div>
+                <div class="px-3 py-10 md:px-4 lg:px-2 md:py-0 md:w-full lg:w-full">
+                    <textarea class="w-full h-12 md:h-60 lg:h-[400px] xl:h-[400px] border border-gray-300 rounded-md p-1 md:p-5  " type="text" placeholder="Enter your review here"></textarea>
+                </div>
+            </div>
+        
+            <div class="flex justify-center align-middle items-center md:w-[100px] md:mt-16 cursor-pointer w-2/4 mx-auto py-2 text-white rounded-md bg-black"><input required  type="submit"></div>
+        </section>
+    </section>
+
+
+
+
+    <section class="pt-10">
+        <div class="w-4/5 mx-auto ">
+            <div class="flex flex-col md:justify-around md:flex-row justify-between space-y-4 mt-10 md:space-y-0 md:space-x-2" data-aos="fade-up">
+                
+                <div class="w-2/4 md:w-[20%]">
+                    <img class="w-full" src="images/image (1).png" alt="Gym Image">
+                </div>
+    
+                
+                <div class="bg-white px-4 py-2 rounded-xl shadow-md md:w-1/2" >
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-[20%]">
+                            <img class="w-full" src="images/five-stars-rating-icon-png - Copy.webp" alt="Rating Stars">
+                        </div>
+                        <div class="flex items-center text-center text-[8px] md:text-[15px] text-gray-500">2 months ago</div>
+                    </div>
+                    <div class="text-wrap w-full">
+                        <p class="text-sm  leading-relaxed text-gray-700 md:text-2xl font-semibold ">
+                            "Joining this gym was the best decision I made for my health. The trainers are incredibly supportive, and the community atmosphere keeps me motivated every day."
+                            <br /><span class="font-semibold flex justify-end">-John D.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:justify-around md:flex-row justify-between space-y-4 mt-10 md:space-y-0 md:space-x-2" data-aos="fade-up">
+                
+                <div class="w-2/4 md:w-[20%]">
+                    <img class="w-full" src="images/image (3).png" alt="Gym Image">
+                </div>
+    
+                
+                <div class="bg-white px-4 py-2 rounded-xl shadow-md md:w-1/2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-[20%]">
+                            <img class="w-full" src="images/five-stars-rating-icon-png - Copy.webp" alt="Rating Stars">
+                        </div>
+                        <div class="flex items-center text-center text-[8px] md:text-[15px] text-gray-500">2 months ago</div>
+                    </div>
+                    <div class="text-wrap w-full">
+                        <p class="text-sm  leading-relaxed text-gray-700 md:text-2xl font-semibold ">
+                            "The community here is fantastic. I’ve made great friends and found accountability partners that keep me on track. It’s more than just a gym; it’s a family."
+                            <br /><span class="font-semibold flex justify-end">-David.S</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col md:justify-around md:flex-row justify-between space-y-4 mt-10 md:space-y-0 md:space-x-2" data-aos="fade-up">
+                
+                <div class="w-2/4 md:w-[20%]">
+                    <img class="w-full" src="images/image (2).png" alt="Gym Image">
+                </div>
+    
+                
+                <div class="bg-white px-4 py-2 rounded-xl shadow-md md:w-1/2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-[20%]">
+                            <img class="w-full" src="images/five-stars-rating-icon-png - Copy.webp" alt="Rating Stars">
+                        </div>
+                        <div class="flex items-center text-center text-[8px] md:text-[15px] text-gray-500">2 months ago</div>
+                    </div>
+                    <div class="text-wrap w-full">
+                        <p class="text-sm  leading-relaxed text-gray-700 md:text-2xl font-semibold ">
+                            "The equipment is top-notch, and the gym is always clean and well-maintained. I’ve seen amazing results in just a few months of consistent training here."
+                            <br /><span  class="font-semibold flex justify-end">-Mike K</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="flex flex-col md:justify-around md:flex-row justify-between space-y-4 mt-10 md:space-y-0 md:space-x-2" data-aos="fade-up">
+                
+                <div class="w-2/4 md:w-[20%]">
+                    <img class="w-full" src="images/image (4).png" alt="Gym Image">
+                </div>
+    
+                
+                <div class="bg-white px-4 py-2 rounded-xl shadow-md md:w-1/2" >
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-[20%]">
+                            <img class="w-full" src="images/five-stars-rating-icon-png - Copy.webp" alt="Rating Stars">
+                        </div>
+                        <div class="flex items-center text-center text-[8px] md:text-[15px] text-gray-500">2 months ago</div>
+                    </div>
+                    <div class="text-wrap w-full">
+                        <p class="text-sm  leading-relaxed text-gray-700 md:text-2xl font-semibold ">
+                            "What sets this gym apart is the attention to detail. The coaches make sure you’re using the correct form, which has helped me avoid injuries and see better results."
+                            <br /><span class="font-semibold flex justify-end">-Kenny J</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col md:justify-around md:flex-row justify-between space-y-4 mt-10 md:space-y-0 md:space-x-2" data-aos="fade-up">
+                
+                <div class="w-2/4 md:w-[20%]">
+                    <img class="w-full" src="images/image (5).png" alt="Gym Image">
+                </div>
+    
+                
+                <div class="bg-white px-4 py-2 rounded-xl shadow-md md:w-1/2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-[20%]">
+                            <img class="w-full" src="images/five-stars-rating-icon-png - Copy.webp" alt="Rating Stars">
+                        </div>
+                        <div class="flex items-center text-center text-[8px] md:text-[15px] text-gray-500">2 months ago</div>
+                    </div>
+                    <div class="text-wrap w-full">
+                        <p class="text-sm  leading-relaxed text-gray-700 md:text-2xl font-semibold ">
+                            "I love the variety of classes offered, from yoga to HIIT. There’s something for everyone, and the instructors really know how to push you to your limits."
+                            <br /><span class="font-semibold">-Ganesh</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col md:justify-around md:flex-row justify-between space-y-4 mt-10 md:space-y-0 md:space-x-2" data-aos="fade-up" >
+                
+                <div class="w-2/4 md:w-[20%]">
+                    <img class="w-full" src="images/image (6).png" alt="Gym Image">
+                </div>
+    
+                
+                <div class="bg-white px-4 py-2 rounded-xl shadow-md md:w-1/2">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-[20%]">
+                            <img class="w-full" src="images/five-stars-rating-icon-png - Copy.webp" alt="Rating Stars">
+                        </div>
+                        <div class="flex items-center text-center text-[8px] md:text-[15px] text-gray-500">2 months ago</div>
+                    </div>
+                    <div class="text-wrap w-full">
+                        <p class="text-sm  leading-relaxed text-gray-700 md:text-2xl font-semibold ">
+                            "I’ve been to many gyms, but this one stands out. The focus on proper technique and overall health, not just fitness, is what keeps me coming back."
+                            <br /><span class="font-semibold">-Tom Hardley</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Select the hamburger menu icon and the dropdown menu
+        const menuIcon = document.getElementById('menu-icon');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+    
+        // Add a click event listener to the menu icon
+        menuIcon.addEventListener('click', function() {
+            // Toggle the 'hidden' class to show/hide the dropdown menu
+            dropdownMenu.classList.toggle('hidden');
+        });
+    
+        // Close the dropdown when clicking on any menu item
+        const menuLinks = dropdownMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                dropdownMenu.classList.add('hidden'); // Hide the dropdown after clicking a link
+            });
+        });
+    </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    
+    
+    
+</body>
+</html>
