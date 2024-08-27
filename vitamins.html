@@ -17,37 +17,47 @@
 <body class="pb-48">
     <header class="bg-[#018ABD] z-50 py-5 fixed right-0 left-0">
         <nav class="flex md:justify-between justify-around gap-14 align-middle items-center w-4/5 mx-auto">
-            
-            <a  class="hidden md:block" href="index.html">
-                <button class="bg-white py-[3px]  px-6 sm:px-10 font-semibold sm:py-1 rounded-md text-base sm:text-xl text-[#1C96C3]">HOME</button>
+            <a class="hidden md:block" href="index.html">
+                <button class="bg-white py-[3px] px-6 sm:px-10 font-semibold sm:py-1 rounded-md text-base sm:text-xl text-[#1C96C3]">HOME</button>
             </a>
-            <div class="virtual  sm:hidden text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-              </svg>
-              </div>
-         
-            <div class=" md:w-full lg:w-[70%]  ">
-                <div class="search-container ">
-                    <img class="search_icon h-[20px]   md:w-[1.25rem] md:h-[1.25rem] md:left-[0.5rem]" src="images/Vector (4).png" alt="Search Icon">
+            <!-- SVG Button -->
+            <div class="virtual sm:hidden text-white">
+                <svg id="menu-button" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </div>
+            
+            <div class="md:w-full lg:w-[70%]">
+                <div class="search-container">
+                    <img class="search_icon h-[20px] md:w-[1.25rem] md:h-[1.25rem] md:left-[0.5rem]" src="images/Vector (4).png" alt="Search Icon">
                     <input class="search h-[30px] md:w-[100%] md:h-[2rem] md:pl-[2rem]" type="text" placeholder="Search">
                 </div>
             </div>
-
-            
-         
         </nav>
-    </header >
-    <nav class="w-4/5 mt-[100px]  mx-auto">
-        <section class=" justify-around hidden md:flex ">
-            <a href="shop.html" class="text text-2xl cursor-pointer  font-semibold">WHEY PROTIEN</a>
-            <a href="vitamins.html" class="text text-2xl cursor-pointer  font-semibold">VITAMINS</a>
-            <a href="gainers.html" class="text text-2xl cursor-pointer  font-semibold">GAINERS</a>
-            <a href="test.html" class="text text-2xl cursor-pointer  font-semibold">TEST BOOSTERS</a>
-            <a href="weight.html" class="text text-2xl  cursor-pointer font-semibold">WEIGHT LOSS</a>
-            
+    </header>
+    
+    <!-- Dropdown Menu -->
+    <div id="dropdown-menu" class="hidden absolute top-[60px] left-0 w-full bg-white z-10 text-[#018ABD]">
+        <ul class="flex flex-col items-center gap-4 p-4">
+            <li><a href="index.html" class="font-semibold text-xl">HOME</a></li>
+            <li><a href="shop.html" class="font-semibold text-xl">WHEY PROTEIN</a></li>
+            <li><a href="vitamins.html" class="font-semibold text-xl">VITAMINS</a></li>
+            <li><a href="gainers.html" class="font-semibold text-xl">GAINERS</a></li>
+            <li><a href="test.html" class="font-semibold text-xl">TEST BOOSTERS</a></li>
+            <li><a href="weight.html" class="font-semibold text-xl">WEIGHT LOSS</a></li>
+        </ul>
+    </div>
+    
+    <nav class="w-4/5 mt-[100px] mx-auto">
+        <section class="justify-around hidden md:flex">
+         
+            <a href="shop.html" class="text text-2xl cursor-pointer font-semibold">WHEY PROTEIN</a>
+            <a href="vitamins.html" class="text text-2xl cursor-pointer font-semibold">VITAMINS</a>
+            <a href="gainers.html" class="text text-2xl cursor-pointer font-semibold">GAINERS</a>
+            <a href="test.html" class="text text-2xl cursor-pointer font-semibold">TEST BOOSTERS</a>
+            <a href="weight.html" class="text text-2xl cursor-pointer font-semibold">WEIGHT LOSS</a>
         </section>
     </nav>
-
 
     <section class="w-11/12 lg:p-12 flex justify-center align-middle items-center mx-auto mt-10">
         <section class="grid grid-cols-2 gap-6  gap-y-10  md:grid-cols-2 lg:grid-cols-3 ">
@@ -150,6 +160,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    menuButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+        dropdownMenu.classList.toggle('block');
+    });
 </script>
 </body>
 </html>
